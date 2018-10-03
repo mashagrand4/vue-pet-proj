@@ -1,9 +1,27 @@
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-    entry: 'index.js',
-    output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist/src')
-    }
+    module: {
+        rules: [
+            {
+                test: /\.vue$/,
+                exclude: /node_modules/,
+                loader: 'vue-loader'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ],
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }),
+        new VueLoaderPlugin()
+    ]
 };
