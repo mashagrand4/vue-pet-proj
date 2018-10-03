@@ -1,0 +1,17 @@
+{
+  "name": "pet-vue-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2"
+  },
+  "scripts": {
+    "start": "webpack --config build/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
