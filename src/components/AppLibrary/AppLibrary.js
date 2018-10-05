@@ -1,4 +1,9 @@
 export default {
-    name: "AppLibrary"
+    name: "AppLibrary",
+    computed: {
+        allBooks () {
+            return this.$store.state.books;
+        }
+    }
 }
 
