@@ -1,8 +1,22 @@
+import { mapState, mapGetters } from 'vuex'
+
 export default {
     name: "AppLibrary",
     computed: {
-        allBooks () {
-            return this.$store.state.books;
+        ...mapState({
+            books: state => state.bookList.books
+        }),
+        ...mapGetters({
+            free: 'freeBooks'
+        })
+    },
+    methods: {
+        add () {
+            this.$store.dispatch('addBook', {
+                id: 5,
+                name: 'masha',
+                cost: 'free'
+            })
         }
     }
 }

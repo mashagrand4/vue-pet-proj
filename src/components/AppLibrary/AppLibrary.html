@@ -1,5 +1,9 @@
 <div>
+    <button @click="add">ADD FUCKING BOOK</button>
     <ul>
-        <li v-for="book in allBooks">{{book.name}}</li>
+        <li v-for="book in books">{{book.name}}</li>
+    </ul>
+    <ul>
+        <li v-for="book in free">{{book.name}}</li>
     </ul>
 </div>
