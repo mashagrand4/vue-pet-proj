@@ -1,5 +1,2 @@
-<template>
-    <h1>ldferfregferg</h1>
-</template>
-
+<template src="./AppAboutUs.html"></template>
 <script src="./AppAboutUs.js"></script>

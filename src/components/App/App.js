@@ -1,10 +1,10 @@
-import AppHeader from '../AppHeader/AppHeader.vue';
-import AppContent from '../AppContent/AppContent.vue';
+import Header from '../AppHeader';
+import Content from '../AppContent';
 
 export default {
     name: 'App',
     components: {
-        AppHeader,
-        AppContent
+        Header,
+        Content
     },
 }

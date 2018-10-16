@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Library from '../components/AppLibrary/AppLibrary.vue';
-import AboutUs from '../components/AppAboutUs/AppAboutUs.vue';
+import Library from '../components/AppLibrary';
+import AboutUs from '../components/AppAboutUs';
 
 Vue.use(Router);
 

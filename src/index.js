@@ -6,7 +6,7 @@ import store from './store'
 
 new Vue({
     el: '#container',
-    components: { App,  },
+    components: { App },
     template: '<App/>',
     router,
     store

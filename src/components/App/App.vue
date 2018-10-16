@@ -1,8 +1,2 @@
-<template>
-    <div>
-        <AppHeader></AppHeader>
-        <AppContent></AppContent>
-    </div>
-</template>
-
+<template src="./App.html"></template>
 <script src="./App.js"></script>
