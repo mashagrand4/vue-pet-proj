@@ -1,4 +1,9 @@
+import FeedbackForm from '../FeedbackForm'
+
 export default {
-    name: "AppAboutUs"
+    name: "AppAboutUs",
+    components: {
+        FeedbackForm
+    }
 }
 

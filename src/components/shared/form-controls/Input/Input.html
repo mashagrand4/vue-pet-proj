@@ -1,0 +1,6 @@
+<div class="slds-form-element">
+  <label class="slds-form-element__label" :id="attributes.id" v-if="label && label.length > 0">{{ label }}</label>
+  <div class="slds-form-element__control">
+    <input v-bind="attributes" class="slds-input" @input="$emit('input', $event.target.value)"/>
+  </div>
+</div>

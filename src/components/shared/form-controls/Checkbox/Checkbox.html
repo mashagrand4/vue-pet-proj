@@ -1,0 +1,11 @@
+<div class="slds-form-element">
+  <div class="slds-form-element__control">
+    <span class="slds-checkbox">
+      <input ref="input" @change="onChange" type="checkbox" v-bind="attributes" :name="name" :id="id" />
+      <label class="slds-checkbox__label" v-bind="attributes" :for="id">
+        <span class="slds-checkbox_faux"></span>
+        <span v-if="label" class="slds-form-element__label">{{ label }}</span>
+      </label>
+    </span>
+  </div>
+</div>

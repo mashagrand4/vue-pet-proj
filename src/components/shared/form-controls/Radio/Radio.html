@@ -1,0 +1,8 @@
+<span class="slds-radio">
+      <input type="radio" v-bind="attributes" @change="$emit('change', $event.target.value)"/>
+
+      <label class="slds-radio__label" v-bind="attributes" :for="id">
+        <span class="slds-radio_faux"></span>
+        <span class="slds-form-element__label" v-if="label && label.length">{{ label }}}</span>
+      </label>
+</span>

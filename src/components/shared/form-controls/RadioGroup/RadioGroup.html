@@ -1,0 +1,11 @@
+<fieldset class="slds-form-element">
+  <legend class="slds-form-element__legend slds-form-element__label"
+          v-bind="attributes"
+          v-if="label && label.length">
+    {{ label }}
+  </legend>
+
+  <div class="slds-form-element__control">
+    <slot></slot>
+  </div>
+</fieldset>
