@@ -6,6 +6,7 @@ import { Component, Prop } from 'vue-property-decorator';
     prop: 'value',
     event: 'change',
   },
+    name: 'ui-checkbox'
 })
 export default class Checkbox extends Vue {
   @Prop({

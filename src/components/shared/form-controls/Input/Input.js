@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-@Component
+@Component({
+    name: 'ui-input'
+})
 export default class Input extends Vue {
   @Prop({
     default: '',

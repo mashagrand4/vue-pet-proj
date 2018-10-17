@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-@Component
+@Component({
+    name: 'ui-radio'
+})
 export default class Select extends Vue {
   @Prop({
     default: null,
@@ -35,7 +37,7 @@ export default class Select extends Vue {
       ...this.$attrs,
       id: this.id,
       name: this.name,
-      value: this.valueField,
+      value: this.value,
       checked: this.checked,
       disabled: this.disabled,
       label: this.label,

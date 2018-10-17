@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-@Component
+@Component({
+    name: 'ui-select'
+})
 export default class Select extends Vue {
   @Prop({
     type: String,

@@ -6,10 +6,10 @@ import Radio from '../shared/form-controls/Radio';
 
 export default {
     components: {
-        Input,
-        Radio,
-        RadioGroup,
-        Checkbox,
-        Select
+        'ui-input': Input,
+        'ui-radio': Radio,
+        'ui-radio-group': RadioGroup,
+        'ui-checkbox': Checkbox,
+        'ui-select': Select
     }
 }

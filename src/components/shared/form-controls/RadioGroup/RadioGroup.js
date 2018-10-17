@@ -4,7 +4,8 @@ import { Component, Prop } from 'vue-property-decorator';
 import Radio from '../Radio/Radio';
 
 @Component({
-  components: { Radio },
+    name: 'ui-radio-group',
+    components: { Radio },
 })
 export default class Select extends Vue {
   @Prop({
