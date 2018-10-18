@@ -1,9 +1,22 @@
 <div>
-    <button @click="add">ADD FUCKING BOOK</button>
     <ul>
-        <li v-for="book in books">{{book.name}}</li>
+        <li v-for="book in books">{{book.name}}, {{book.cost}}</li>
     </ul>
     <ul>
-        <li v-for="book in free">{{book.name}}</li>
+        <li v-for="book in free">{{book.name}}, {{book.cost}}</li>
     </ul>
+
+    <div>
+        <ui-input
+                :label="'Name of book'"
+                v-on:input="nameChanged"
+        ></ui-input>
+
+        <ui-input
+                :label="'Cost of book'"
+                v-on:input="costChanged"
+        ></ui-input>
+
+        <button @click="add">Add new fuckin book</button>
+    </div>
 </div>

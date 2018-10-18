@@ -54,8 +54,6 @@ export default class Select extends Vue {
     return {
       ...this.$attrs,
       id: this.id,
-      value: this.valueField,
-      text: this.textField,
       size: this.selectSize,
       required: this.required,
       name: this.name,

@@ -1,8 +1,14 @@
 <div>
-    <ui-input></ui-input>
+    <div>
+        <ui-radio-group :label="label">
+            <ui-radio :attributes="attributes"></ui-radio>
+        </ui-radio-group>
+    </div>
     <ui-select :options="options"></ui-select>
-    <ui-radio-group :label="label">
-        <ui-radio :attributes="attributes"></ui-radio>
-    </ui-radio-group>
-    <ui-checkbox></ui-checkbox>
+    <div>
+        <ui-input></ui-input>
+    </div>
+    <div>
+        <ui-checkbox ></ui-checkbox>
+    </div>
 </div>

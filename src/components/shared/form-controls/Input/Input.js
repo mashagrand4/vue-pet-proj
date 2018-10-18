@@ -52,6 +52,7 @@ export default class Input extends Vue {
       readonly: this.readonly,
       name: this.name,
       disabled: this.disabled,
+      label: this.label
     };
   }
 }
