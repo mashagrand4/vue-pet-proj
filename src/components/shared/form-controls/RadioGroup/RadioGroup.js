@@ -1,21 +1,10 @@
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
 
-import Radio from '../Radio/Radio';
-
 @Component({
-    name: 'ui-radio-group',
-    components: { Radio },
+    name: 'ui-radio-group'
 })
 export default class Select extends Vue {
-  @Prop({
-    type: Array,
-    default() {
-      return [];
-    },
-  })
-  radios;
-
   @Prop({
     default: null,
   })
@@ -31,7 +20,7 @@ export default class Select extends Vue {
     return {
       ...this.$attrs,
       id: this.id,
-      label: this.label,
+      label: this.label
     };
   }
 }

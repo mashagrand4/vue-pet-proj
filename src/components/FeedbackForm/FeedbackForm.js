@@ -11,5 +11,40 @@ export default {
         'ui-radio-group': RadioGroup,
         'ui-checkbox': Checkbox,
         'ui-select': Select
+    },
+    computed: {
+        options: function() {
+            return [
+                { text: 'Option 1' },
+                { text: 'Option 2' },
+                { text: 'Option 3' },
+                { text: 'Option 4' }
+            ]
+        },
+        label: function() {
+            return 'Check your sex';
+        },
+        // attributes: function() {
+        //     return [
+        //         {
+        //             id: '1',
+        //             name: 'lol',
+        //             value: 'sex',
+        //             label: 'mosk'
+        //         },
+        //         {
+        //             id: '2',
+        //             name: 'lol',
+        //             value: 'sex',
+        //             label: 'mosk'
+        //         },
+        //         {
+        //             id: '3',
+        //             name: 'lol',
+        //             value: 'sex',
+        //             label: 'mosk'
+        //         }
+        //     ]
+        // }
     }
 }

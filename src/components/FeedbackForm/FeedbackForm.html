@@ -1,11 +1,8 @@
 <div>
     <ui-input></ui-input>
-    <ui-select>
-        <option value="dffd"></option>
-    </ui-select>
-    <ui-radio-group>
-        <ui-radio></ui-radio>
-        <ui-radio></ui-radio>
+    <ui-select :options="options"></ui-select>
+    <ui-radio-group :label="label">
+        <ui-radio :attributes="attributes"></ui-radio>
     </ui-radio-group>
     <ui-checkbox></ui-checkbox>
 </div>
